@@ -1,12 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Home from "./src/Home
-import Profile from "./src/Perfil
+import Home from "./src/Home"
+import Perfil from "./src/Perfil"
 
 export type RootStackParamList = {
   Home: undefined;
-  Profile: {
+  Perfil: {
     nome: string;
     email: string;
     foto: string;
@@ -27,7 +27,7 @@ export default function App() {
         <Stack.Screen
           name="Perfil"
           component={Perfil}
-          options={{ title: "Perfil" }}
+          options={{ title: "Perfil do usuário" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
