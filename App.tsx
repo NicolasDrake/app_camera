@@ -1,8 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Home from "./telas/Home";
-import Profile from "./telas/Profile";
+import Home from "./src/Home
+import Profile from "./src/Perfil
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,12 +22,12 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{ title: "Início" }}
+          options={{ title: "Pagina principal" }}
         />
         <Stack.Screen
-          name="Profile"
-          component={Profile}
-          options={{ title: "Perfil do Usuário" }}
+          name="Perfil"
+          component={Perfil}
+          options={{ title: "Perfil" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
